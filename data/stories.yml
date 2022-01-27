@@ -28,3 +28,10 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- rule: Say hello anytime the user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
