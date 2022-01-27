@@ -7,7 +7,27 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Say 'I am a bot' anytime the user challenge human or not
   steps:
-  - intent: bot_challenge
+  - intent: bot_challenge/human_or_not
   - action: utter_iamabot
+
+- rule: Describe domain function if user asks
+  steps:
+  - intent: bot_challenge/purpose
+  - action: utter_myfunction
+
+- rule: Answer name when user asks
+  steps:
+  - intent: bot_challenge/ask_name
+  - action: utter_myname
+
+- rule: Answer general for all faqs
+  steps:
+  - intent: bot_challenge/controversal_faq
+  - action: utter_generals
+
+- rule: Answer time
+  steps:
+  - intent: time
+  - action: utter_time
