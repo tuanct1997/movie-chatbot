@@ -27,11 +27,409 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_goodbye
+  - action: utter_sad
 
-- rule: Say hello anytime the user says hello
+- story: sad path 3
   steps:
   - intent: greet
   - action: utter_greet
+  - intent: health
+  - action: utter_health
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sad
+
+- story: happy path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: health
+  - action: utter_health
+  - intent: mood_great
+  - action: utter_happy
+
+# - story: Say hello anytime the user says hello
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+
+- story: ask actor movie happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: person_movie
+    entities:
+    - PERSON: "Brad Pitt"
+  - slot_was_set:
+    - PERSON: "Brad Pitt"
+  - action: action_verify_person
+  - intent: affirm
+  - action: utter_onit
+  - action: action_search_movie_by_actor
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_goodbye
+
+- story: ask actor movie happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: health
+  - action: utter_health
+  - intent: mood_great
+  - action: utter_happy
+  - intent: person_movie
+    entities:
+    - PERSON: "tom cruise"
+  - slot_was_set:
+    - PERSON: "tom cruise"
+  - action: action_verify_person
+  - intent: affirm
+  - action: utter_onit
+  - action: action_search_movie_by_actor
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_goodbye
+
+- story: ask actor movie sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: health
+  - action: utter_health
+  - intent: mood_great
+  - action: utter_happy
+  - intent: person_movie
+    entities:
+    - PERSON: "tom cruise"
+  - slot_was_set:
+    - PERSON: "tom cruise"
+  - action: action_verify_person
+  - intent: deny
+  - action: utter_repeat
+  - intent: inform_name
+  - action: utter_onit
+  - action: action_search_movie_by_actor
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_goodbye
+
+- story: ask actor movie sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: health
+  - action: utter_health
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: person_movie
+    entities:
+    - PERSON: "tom hank"
+  - slot_was_set:
+    - PERSON: "tom hank"
+  - action: action_verify_person
+  - intent: deny
+  - action: utter_repeat
+  - intent: inform_name
+  - action: utter_onit
+  - action: action_search_movie_by_actor
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+- story: ask actor movie sad path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: person_movie
+    entities:
+    - PERSON: "tom hank"
+  - slot_was_set:
+    - PERSON: "tom hank"
+  - action: action_verify_person
+  - intent: deny
+  - action: utter_repeat
+  - intent: inform_name
+  - action: utter_onit
+  - action: action_search_movie_by_actor
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
 
 
+- story: ask info movie happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_movie_data
+    entities:
+    - movie_title: "Black Panther"
+  - slot_was_set:
+    - movie_title: "Black Panther"
+  - action: action_verify_title
+  - intent: affirm
+  - action: utter_onit
+  - action: action_search_movie_info
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_goodbye
+
+- story: ask info movie happy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_movie_data
+    entities:
+    - movie_title: "Black Panther"
+  - slot_was_set:
+    - movie_title: "Black Panther"
+  - action: action_verify_title
+  - intent: deny
+  - intent: utter_repeat
+  - action: utter_onit
+  - action: action_search_movie_info
+  - intent: mood_great
+  - action: utter_happy
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: utter_goodbye
+
+
+- story: ask info movie sad path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: search_movie_data
+    entities:
+    - movie_title: "Black Panther"
+  - slot_was_set:
+    - movie_title: "Black Panther"
+  - action: action_verify_title
+  - intent: deny
+  - intent: utter_repeat
+  - action: utter_onit
+  - action: action_search_movie_info
+  - intent: deny
+  - action: utter_sad
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: recommendation happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: random_rec
+  - action: utter_genre_type
+  - intent: inform_genre
+    entities:
+    - genre: "sci-fi"
+  - slot_was_set:
+    - genre: "sci-fi"
+  - action: action_verify_genre
+  - intent: affirm
+  - action: utter_onit
+  - action: action_recommendation
+  - intent: mood_great
+  - action: utter_happy
+
+- story: recommendation happy 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: random_rec
+  - action: utter_genre_type
+  - intent: inform_genre
+    entities:
+    - genre: "thriller"
+  - slot_was_set:
+    - genre: "thriller"
+  - action: action_verify_genre
+  - intent: deny
+  - action: utter_repeat
+  - action: utter_onit
+  - action: action_recommendation
+  - intent: mood_great
+  - action: utter_happy
+
+- story: recommendation sad
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: random_rec
+  - action: utter_genre_type
+  - intent: inform_genre
+    entities:
+    - genre: "comedy"
+  - slot_was_set:
+    - genre: "comedy"
+  - action: action_verify_genre
+  - intent: deny
+  - action: utter_repeat
+  - action: utter_onit
+  - action: action_recommendation
+  - intent: mood_unhappy
+  - action: utter_sad
+
+- story: recommendation sad 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: random_rec
+  - action: utter_genre_type
+  - intent: inform_genre
+    entities:
+    - genre: "drama"
+  - slot_was_set:
+    - genre: "drama"
+  - action: action_verify_genre
+  - intent: affirm
+  - action: utter_onit
+  - action: action_recommendation
+  - intent: mood_unhappy
+  - action: utter_sad
+
+- story: recommendation sad with genre
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recommend_movie_genre
+    entities:
+    - genre: "comedy"
+  - slot_was_set:
+    - genre: "comedy"
+  - action: action_verify_genre
+  - intent: deny
+  - action: utter_repeat
+  - action: utter_onit
+  - action: action_recommendation
+  - intent: mood_unhappy
+  - action: utter_sad
+
+- story: recommendation movie with genre sad 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recommend_movie_genre
+    entities:
+    - genre: "drama"
+  - slot_was_set:
+    - genre: "drama"
+  - action: action_verify_genre
+  - intent: affirm
+  - action: utter_onit
+  - action: action_recommendation
+  - intent: mood_unhappy
+  - action: utter_sad
+
+- story: recommendation happy 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recommend_movie_genre
+    entities:
+    - genre: "thriller"
+  - slot_was_set:
+    - genre: "thriller"
+  - action: action_verify_genre
+  - intent: deny
+  - action: utter_repeat
+  - action: utter_onit
+  - action: action_recommendation
+  - intent: mood_great
+  - action: utter_happy
+
+- story: recommendation happy
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: recommend_movie_genre
+    entities:
+    - genre: "sci-fi"
+  - slot_was_set:
+    - genre: "sci-fi"
+  - action: action_verify_genre
+  - intent: affirm
+  - action: utter_onit
+  - action: action_recommendation
+  - intent: mood_great
+  - action: utter_happy
+
+
+- story: weather 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+  - action: action_tell_weather_default
+  - action: utter_city
+  - action: utter_did_that_help
+  - intent: affirm
+
+- story: weather 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+  - action: action_tell_weather_default
+  - action: utter_city
+  - action: utter_did_that_help
+  - intent: affirm
+
+- story: weather 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather
+  - action: action_tell_weather_default
+  - action: utter_city
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry
+
+- story: weather 4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather_city
+    entities:
+    - city: "hanoi"
+  - slot_was_set:
+    - city: "hanoi"
+  - action: action_tell_weather_default
+  - action: utter_city
+  - action: utter_did_that_help
+  - intent: affirm
+
+
+- story: weather 5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather_city
+    entities:
+    - city: "paris"
+  - slot_was_set:
+    - city: "paris"
+  - action: action_tell_weather_default
+  - action: utter_city
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_sorry

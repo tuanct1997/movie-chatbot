@@ -17,6 +17,8 @@ nlu:
     - yo
     - goodevening
     - goodmorning
+    - hey AIYO
+    - AIYO
 
 - intent: time
   examples: |
@@ -42,6 +44,20 @@ nlu:
     - bye bye
     - see you later
 
+- intent: inform_name
+  examples: |
+    - [tom cruise](PERSON)
+    - [brad pitt](PERSON)
+    - [tom hank](PERSON)
+    - [Tom Hank](PERSON)
+    - [Tom Holland](PERSON)
+    - [500 days of summer](movie_title)
+    - [Star wars](movie_title)
+    - [yes man](movie_title)
+    - [greyhound](movie_title)
+    - [Star Trek](movie_title)
+
+
 - intent: affirm
   examples: |
     - yes
@@ -52,6 +68,7 @@ nlu:
     - Confirmed
     - I can confirm that
     - yup
+    - seem right
 
 
 - intent: deny
@@ -65,7 +82,7 @@ nlu:
     - not really
     - not at all
     - not quite
-    - I don't want that anymore
+    - I don't want that
     - That's not what I want
 
 - intent: mood_great
@@ -84,6 +101,12 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - I'm fine
+    - everything is good
+    - i'm doing ok
+    - very good
+    - very well
+    - very good, very well
 
 - intent: mood_unhappy
   examples: |
@@ -101,29 +124,45 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+    - really bad
+    - not so good
+    - i don't know anymore
+    - im not sure
 
-- intent: bot_challenge/ask_name
+
+- intent: chitchat/ask_name
   examples: |
     - what is your name?
     - who are you? 
     - what do people call you?
     - What should I call you?
 
-- intent: bot_challenge/human_or_not
+- intent: chitchat/love
+  examples: |
+    - you know I have loved you for really long time
+    - I love you
+    - Do you love me?
+    - love you so much
+    
+
+- intent: chitchat/human_or_not
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
 
-- intent: bot_challenge/controversal_faq
+- intent: chitchat/controversal_faq
   examples: |
     - Does god exist?
     - Does gun make life safer?
     - Is it ethical for abortion?
     - Killing animal to making clothing is against the god will
+    - what is your gender?
+    - you are female or male?
+    - you are girl or boy?
 
-- intent: bot_challenge/purpose
+- intent: chitchat/purpose
   examples: |
     - What do you do?
     - what is your purpose?
@@ -139,7 +178,7 @@ nlu:
     - suggest a movie
     - do you know any nice movie to watch?
 
-itent: inform_genre
+- intent: inform_genre
   examples: |
     - I'm more into [comedy](genre) movie?
     - What about [action](genre) one?
@@ -150,17 +189,45 @@ itent: inform_genre
     - what about [action](genre)?
     - can I have a [music](genre) movie please
 
-intent: inform_lang
+- intent: dismiss
   examples: |
-    - A [Spanish](language) one please!
-    - [English](language) please!
-    - [Italian](language) please!
-    - [Italian](language)
-    - [French](language)
-    - [Hindi](language)
-    - What's about [Spanish](language) for today?
-    - [French](language) would be nice!
-    - Can I have [English](language) movie please!
+    - that is all
+    - i don't need anything else
+    - you answered all of my questions
+    - i can't think of anything else
+    - nope, that's it
+    - not at this time
+    - that will be it
+    - i have no more questions
+    - that's all for now
+    - nevermind
+    - no, that is all
+    - that is all i need
+
+- intent: health
+  examples: |
+    - how are you?
+    - how is it going?
+    - everything is ok? 
+    - how are things going?
+    - whassup?
+    - what's up?
+    - what have you been?
+    - how's everything?
+
+    
+
+# - intent: inform_lang
+#   examples: |
+#     - A [spanish](language) one please!
+#     - [english](language) please!
+#     - [italian](language) please!
+#     - [italian](language)
+#     - [french](language)
+#     - [hindi](language)
+#     - What's about [spanish](language) for today?
+#     - [french](language) would be nice!
+#     - Can I have [english](language) movie please!
 
 
 - intent: recommend_movie_genre
@@ -175,7 +242,7 @@ intent: inform_lang
     - Can you find me a [comdey](genre)?
     - can you recommend a [comedy](genre)
     - Can you recommend an [action](genre) movie?
-    - Can you recommend a [romantic](genre) in [English](language)?
+    - Can you recommend a [romantic](genre)?
     - can you suggest a good [thriller](genre)
     - can you recommend a [romantic](genre)
     - can you recommend a [musical](genre) for me
@@ -192,75 +259,72 @@ intent: inform_lang
     - are there other [sport](genre)movies you would suggest?
     - show me a good [documentary](genre)
     - recommend a [documentary](genre)
-    - can I have a [Spanish](language) [comedy](genre) movie please?
-    - can you suggest a [action](genre) movie that is in [korean](language)
+    - can I have a [comedy](genre) movie please?
+    - can you suggest a [action](genre) movie 
     - [hindi](language) [romance](genre)
-    - can you recommend a film that is in [english](language) and is [comedy](genre)
-    - i would like an [english](language) movie that is [comedy](genre) please
+    - can you recommend a film that is [comedy](genre)
+    - i would like an movie that is [comedy](genre) please
 
-- intent: actor_info
+- intent: person_movie
   examples: |
-    - Find movie with [Uma Thurman](actor)
-    - Find flicks with [Brad Pitt](actor)
-    - Find movie with [Johny Depp](actor)
-    - What is the movie with [Matt Damon](actor)
-    - Hey bot find movies with [Woody Allen](actor)
-    - Find me a movie with [Cher](actor)
-    - Give me a movie with [Chadwick Bosman](actor)
-    - did [Anna Nab](actor) star in
-    - Movies with [Daniel Day-Lewis](actor)
-    - What has [Robert De Niro](actor) starred in?
-    - what did [Philip Seymour Hoffman](actor) act in
-    - find movies with [Meryl Streep](actor)
-    - give me movies with [Adam Driver](actor)
-    - find me movies with [Jennifer Lawrence](actor)
-    - well, find me movies with [Jennifer Lawrence](actor)
-    - Find me movies with [Chris Evans](actor)
-    - Find me movies with [Jennifer Lawrence](actor)
-    - movies performed by [jean reno](actor)
-    - Find me movies with [Brad Pitt](actor)
-    - movies with [Harvey Kitel](actor)
-    - give me movies by [Julia Roberts](actor)
-    - What did [Gal Gadot](actor) star in?
-    - What has [Denzel Washington](actor) starred in?
-    - what movies has [brad pitt](actor) starred?
-    - can you find movies with [ed norton](actor)
-
-- intent: search_by_director
-  examples: |
-    - Find a movie directed by [Quentin Tarantino](director).
+    - Find movie with [uma thurman](PERSON)
+    - Find flicks with [brad pitt](PERSON)
+    - Find movie with [johny depp](PERSON)
+    - What is the movie with [matt damon](PERSON)
+    - Hey bot find movies with [woody allen](PERSON)
+    - Find me a movie with [cher](PERSON)
+    - Give me a movie with [chadwick bosman](PERSON)
+    - did [anna nab](PERSON) star in
+    - Movies with [daniel day-lewis](PERSON)
+    - What has [robert de niro](PERSON) starred in?
+    - what did [philip seymour hoffman](PERSON) act in
+    - find movies with [meryl streep](PERSON)
+    - give me movies with [adam driver](PERSON)
+    - find me movies with [jennifer lawrence](PERSON)
+    - well, find me movies with [jennifer lawrence](PERSON)
+    - Find me movies with [chris evans](PERSON)
+    - Find me movies with [jennifer lawrence](PERSON)
+    - movies performed by [jean reno](PERSON)
+    - Find me movies with [brad pitt](PERSON)
+    - movies with [harvey kitel](PERSON)
+    - give me movies by [julia roberts](PERSON)
+    - What did [gal gadot](PERSON) star in?
+    - What has [denzel washington](PERSON) starred in?
+    - what movies has [brad pitt](PERSON) starred?
+    - can you find movies with [ed norton](PERSON)
+    - Find a movie directed by [Quentin Tarantino](PERSON).
     - What can you find me directed by [Guillermo del Toro](director?
-    - What has [Ridley Scott](director) directed?
-    - Find titles by [Penny Marshall](director).
-    - Give me movies by [Martin Scorcese](director).
-    - Find me movies by [Ingmar Bergman](director)
-    - what does [justin benson](director) have out there?
-    - give me titles by [Aaron Moorhead](director)
-    - movie directed by [Francis Ford Coppola](director)
-    - Find movies by [Oliver Stone](director)
-    - movies directed by [Taika Waititi](director)
-    - movies by [Oliver Stone](director)
-    - movies by [Woody Allen](director)
-    - What is the director [Taika Waititi](director) known for
-    - find movies by [Woody Allen](director)
-    - Get me a movie by [Oliver Stone](director)
-    - get me a movie by [Kathryn Bigelow](director)
-    - give me movies by [Stanley Kubrick](director)
-    - Find me movies by [Greata Gerwig](director)
-    - Find me movies by [Stanley Kubrik](director)
-    - give me movies by [Guillermo del Toro](director)
-    - [guy ritchie](director) director
-    - What has [Ridley Scott](director) directed
-    - Give me a movie by [Guillermo del Toro](director)
-    - Find me a movie by [Oliver Stone](director)
-    - What is the director [Patty Jenkins](director) known for
-    - can you find me movies directed by [oliver stone](director)
-    - what movies has [christopher nolan](director) directed
+    - What has [Ridley Scott](PERSON) directed?
+    - Find titles by [Penny Marshall](PERSON).
+    - Give me movies by [Martin Scorcese](PERSON).
+    - Find me movies by [Ingmar Bergman](PERSON)
+    - what does [justin benson](PERSON) have out there?
+    - give me titles by [Aaron Moorhead](PERSON)
+    - movie directed by [Francis Ford Coppola](PERSON)
+    - Find movies by [Oliver Stone](PERSON)
+    - movies directed by [Taika Waititi](PERSON)
+    - movies by [Oliver Stone](PERSON)
+    - movies by [Woody Allen](PERSON)
+    - What is the director [Taika Waititi](PERSON) known for
+    - find movies by [Woody Allen](PERSON)
+    - Get me a movie by [Oliver Stone](PERSON)
+    - get me a movie by [Kathryn Bigelow](PERSON)
+    - give me movies by [Stanley Kubrick](PERSON)
+    - Find me movies by [Greata Gerwig](PERSON)
+    - Find me movies by [Stanley Kubrik](PERSON)
+    - give me movies by [Guillermo del Toro](PERSON)
+    - [guy ritchie](PERSON) director
+    - What has [Ridley Scott](PERSON) directed
+    - Give me a movie by [Guillermo del Toro](PERSON)
+    - Find me a movie by [Oliver Stone](PERSON)
+    - What is the director [Patty Jenkins](PERSON) known for
+    - can you find me movies directed by [oliver stone](PERSON)
+    - what movies has [christopher nolan](PERSON) directed
 
 - intent: search_movie_data
   examples: |
     - Who directed [Black Panther](movie_title)
-    - who was the director of [I am not a witch](movie_title)
+    - who was the director of [i am not a witch](movie_title)
     - Get me the director of [Mission Impossible Fallout](movie_title)
     - [Leave No Trace](movie_title) was by who?
     - Who directed [Terminator](movie_title)
@@ -269,27 +333,27 @@ intent: inform_lang
     - [Filmworker](movie_title) director.
     - who directed [The Ballad of Buster Scruggs](movie_title)?
     - who directed [pulp fiction](movie_title)
-    - Who directed [Match Point](movie_title)
+    - Who directed [match point](movie_title)
     - who directed [Coco](movie_title)
     - Let me know the director of [Matrix](movie_title)
     - who directed [New York New York](movie_title)?
     - Who directed the film [Snatch](movie_title)?
-    - Who starred in [It Follows](movie_title)?
+    - Who starred in [it follows](movie_title)?
     - Which actors were in [Ex Machina](movie_title)
     - stars in [The revenant](movie_title)?
     - Who acted in [What We Do in the Shadows](movie_title)
     - actors in [Sicario](movie_title)
     - acting in [The big short](movie_title)
     - Starring in [Spotlight](movie_title)
-    - who starred in [The Hateful Eight](movie_title)
+    - who starred in [500 days of summer](movie_title)
     - which actors in [the martian](movie_title)
     - Stars in [Slow West](movie_title)
     - who acted in [Inside Out](movie_title)
-    - who acted in [Pulp Fiction](movie_title)
+    - who acted in [pulp fiction](movie_title)
     - Who acted in [Match Point](movie_title)
     - who acted in [Alien](movie_title)
     - Who acted in [Alien](movie_title)
-    - Who acted in [Alien](movie_title)?
+    - Who acted in [alien](movie_title)?
     - who starred in [alien](movie_title)
     - who acted in [sleepy hollow](movie_title)
     - who acted in [coco](movie_title)?
@@ -321,8 +385,8 @@ intent: inform_lang
     - give me the release for [black panther](movie_title).
     - release for [a house in the prairie](movie_title)
     - when was [Match point](movie_title) released
-    - when was [The Lure](movie_title) released
-    - when was [Joker](movie_title) released?
+    - when was [the lure](movie_title) released
+    - when was [joker](movie_title) released?
     - can you tell me more about [Snowden](movie_title)
     - who starred in this movie
     - yes, can you tell me who directed [Rushmore](movie_title)
@@ -331,15 +395,42 @@ intent: inform_lang
     - who starred in [Black Panther](movie_title)
     - yes. can you look up who directed [the shining](movie_title)
     - can you show me who directed [fruitvale station](movie_title)
-    - Who starred in [Captain Marvel](movie_title)
+    - Who starred in [captain marvel](movie_title)
     - who starred in [Insomnia](movie_title)
     - who starred in [Deadpool](movie_title)
     - who starred in [Field of Dreams](movie_title)
-    - who directed [Star Wars](movie_title)
-    - who directed [Rushmore](movie_title)
-    - who starred in [Fight Club](movie_title)
+    - who directed [star wars](movie_title)
+    - who directed [rushmore](movie_title)
+    - who starred in [fight club](movie_title)
     - who directed [toy story](movie_title)
     - who starred in [Rushmore](movie_title)
+
+- intent: weather
+  examples: |
+    - what's the weather?
+    - what's the weather today?
+    - temperature
+    - what is the temperature today?
+    - how's the weather today?
+    - tell me the weather forecast
+    - i want to know temperature today
+
+- intent: weather_city
+  examples: |
+    - show me what's the weather in [paris](city)
+    - temperature in [hanoi](city)
+    - what is the current temperature in [Hanoi](city)
+    - tell me the temperature at [hochiminh city](city)
+    - tell me the temperature at [trento](city)
+    - weather at [Trento](city)
+    - hows [avignon](city) today
+    - hows [Berlin](city) today
+    - weather in [Chenai](city)
+    - how the weather in [rome](city) today?
+    - hows weather in [Dublin](city)
+    - show me the weather in [london](city)
+    - What's the weather in [berlin](city) at the moment?
+
 
 - synonym: movie_title
   examples: |

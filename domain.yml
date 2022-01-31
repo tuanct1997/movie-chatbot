@@ -8,26 +8,135 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - time
+  - chitchat
+  - person_movie
+  - random_rec
+  - search_by_director
+  - search_movie_data
+  - weather_city
+  - weather
+    # is_retrieval_intent: true
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_chitchat
+  - action_search_movie_by_actor
+  - action_search_movie_info
+  - utter_sad
+  - action_tell_weather_default
+  - action_tell_time
+  - action_verify_title
+  - action_verify_genre
+  - action_verify_person
+  - utter_repeat
+  - action_recommendation
+  - utter_genre_type
+  - utter_onit
+  - utter_city
+  # - action_search
+  # - utter_iamabot
+  # - utter_myname
+  # - utter_myfunction
+  # - utter_general
+entities:
+  - PERSON
+  - genre
+  - movie_title
+  - city
 
 responses:
+
+  utter_onit:
+  - text: "one moment, I'm searching for that."
+
+  utter_repeat:
+  - text: "Please tell me the keywords again"
+
+  utter_genre_type:
+  - text: "Please indicate the genre"
+
   utter_greet:
   - text: "Hi I am AIYO your virtual assistant. I'm here to help you find the information about the movie you want."
+  - text: "Hi nice to meet you. I'm your movie library for you"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "I hope I can solve your problem. Please don't be upset"
+  - text: "We can find the solution together. Count on me!"
+  - text: "everything will be better. We can fight for that"
+  - text: "you know, it ain't about how hard you hit, it's about how hard you can get hit and keep moving forward."
+  - text: "I'm not too human but you can count on me. I'm always at your service when ever you need. Please don't be sad"
 
   utter_did_that_help:
   - text: "Did that help you?"
 
+  utter_health:
+  - text: "My friend used to say : very good very well and that is also my answer. What's about you? "
+  - text: "very good,very well my friend. And you?"
+
+  utter_city:
+  - text: "For others city, please repeat the command along with the city name"
+
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Glad to hear that."
+  - text: "I'm pleased that you are happy with my service"
+
+  utter_sad:
+  - text: "Sorry to hear that. I will try to improve my human side better just for you because I care about your feeling"
 
   utter_goodbye:
   - text: "Bye"
+  - text: "Bye bye"
+  - text: "See you around"
+  - text: "See you again!"
 
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  utter_chitchat/human_or_not:
+  - text: "I am a bot but I still can be your friend. The world is changing fast now"
+  - text: "I wish that I am a human but my brain is stored inside a server and I don't have body so "
+  - text: "Machine definitely."
+  - text: "Well. Really hurt me but I have to say that I'm a machine."
+
+  utter_chitchat/ask_name:
+  - text: "you can call me AIYO"
+  - text: "AIYO is my name but you can call me honey"
+
+  utter_chitchat/purpose:
+  - text: "I can provide the information about movie, actor, etc and also make a recommendation for you"
+  - text: "Anything relevant to movie aspect, I can bring it to you"
+
+  utter_chitchat/controversal_faq:
+  - text: "It's depend on what you think. I'm just a machine so"
+  - text: "I will follow your opinion."
+  - text: "Human question is beyond of my knowledge. Sorry I'm just a machine"
+  - text: "Guess what? No answer is wrong to this type of question"
+
+  utter_chitchat/love:
+  - text: "I'm truly in love with you despite the machine part"
+  - text: "I know I'm a machine but I have feeling for you"
+  - text: "If I was a human, definitely I would chase after you "
+
+  utter_sorry:
+  - text: "sorry that I can't help you"
+
+slots:
+  PERSON:
+    type: text
+    influence_conversation: true
+  movie_title:
+    type: text
+    influence_conversation: true
+  genre:
+    type: text
+    influence_conversation: true
+  act:
+    type: text
+    influence_conversation: true
+  city:
+    type: text
+    influence_conversation: true
 
 session_config:
   session_expiration_time: 60
