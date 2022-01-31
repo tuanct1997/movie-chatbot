@@ -20,6 +20,17 @@ nlu:
     - hey AIYO
     - AIYO
 
+- intent: chitchat/age
+  examples: |
+    - how old are you?
+    - how old are you
+    - when was you born
+    - what is your age
+    - age
+    - you are how old
+    - what age do you have
+    - your age
+
 - intent: time
   examples: |
     - What time is it?
@@ -169,6 +180,15 @@ nlu:
     - what can you do?
     - what things you capable of?
 
+- intent: chitchat/joke
+  examples: |
+    - Can you tell me some joke?
+    - some joke please!
+    - funny story
+    - Tell me some funny story
+    - I need a funny story now
+    - I want to hear some joke now
+
 - intent: random_rec
   examples: |
     - Can you recommend me some films?
@@ -188,21 +208,26 @@ nlu:
     - [sci-fi](genre), please!
     - what about [action](genre)?
     - can I have a [music](genre) movie please
+    - [comedy](genre)
+    - [thriller](genre)
+    - [romance](genre)
+    - [action](genre)
+    - [sci-fi](genre)
 
-- intent: dismiss
-  examples: |
-    - that is all
-    - i don't need anything else
-    - you answered all of my questions
-    - i can't think of anything else
-    - nope, that's it
-    - not at this time
-    - that will be it
-    - i have no more questions
-    - that's all for now
-    - nevermind
-    - no, that is all
-    - that is all i need
+# - intent: dismiss
+#   examples: |
+#     - that is all
+#     - i don't need anything else
+#     - you answered all of my questions
+#     - i can't think of anything else
+#     - nope, that's it
+#     - not at this time
+#     - that will be it
+#     - i have no more questions
+#     - that's all for now
+#     - nevermind
+#     - no, that is all
+#     - that is all i need
 
 - intent: health
   examples: |

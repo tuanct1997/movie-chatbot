@@ -36,9 +36,6 @@ class SearchMovieByActor(Action):
         print(querystring)
         headers = CRENDENTIAL
         response = requests.request("GET", url, headers=headers, params=querystring).json()
-        print("@@@@@@@@@@@")
-        print(response.keys())
-        print("@@@@@@@@@@@@")
         if "d" not in response:
             dispatcher.utter_message(text = "There is something wrong with my system. Could you please repeat the command from begining")
             return []
@@ -191,7 +188,7 @@ class ActionVerifyTitle(Action):
         elif "direct" in txt:
             slots = "direct"
         elif "release" in txt or "when" in txt:
-            slots = "realse"
+            slots = "release"
         elif "plot" in txt or "summary" in txt:
             slots = "plot"
         elif "rating" in txt or "rate" in txt or "score" in txt or "imdb" in txt:
@@ -261,7 +258,7 @@ class ActionTellWeatherDefault(Action):
         temper = response["current"]["temp_c"]
         real_temper = response["current"]["feelslike_c"]
         condition = response["current"]["condition"]["text"]
-        dispatcher.utter_message(text="The current temperature in {} is {} but it's actually feels like {}. The weather is {}.".format(slots,temper, real_temper, condition))
+        dispatcher.utter_message(text="The current temperature in {} is {} but it's actually feels like {}. The weather is {}. \n For others city, please repeat the command along with the city name".format(slots,temper, real_temper, condition))
 
         return []
 

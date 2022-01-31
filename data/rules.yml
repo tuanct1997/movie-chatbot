@@ -17,24 +17,17 @@ rules:
   - intent: greet
   - action: utter_greet
 
-# - rule: always cheer up when user sad
-#   steps:
-#   - intent: mood_unhappy
-#   - action: utter_cheer_up
+- rule: handle message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_fallback
+
+
 - rule: Ask genre when users give random rec
   steps:
   - intent: random_rec
   - action: utter_genre_type
 
-# - rule: Answer name when user asks
-#   steps:
-#   - intent: bot_challenge/ask_name
-#   - action: utter_myname
-
-# - rule: Answer general for all faqs
-#   steps:
-#   - intent: bot_challenge/controversal_faq
-#   - action: utter_generals
 
 - rule: Answer time
   steps:

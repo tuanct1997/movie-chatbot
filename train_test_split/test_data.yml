@@ -1,0 +1,126 @@
+version: "2.0"
+nlu:
+- intent: chitchat/ask_name
+  examples: |
+    - what is your name?
+- intent: chitchat/love
+  examples: |
+    - love you so much
+- intent: chitchat/human_or_not
+  examples: |
+    - am I talking to a human?
+- intent: chitchat/purpose
+  examples: |
+    - what things you capable of?
+- intent: chitchat/joke
+  examples: |
+    - funny story
+- intent: chitchat/controversal_faq
+  examples: |
+    - Is it ethical for abortion?
+- intent: chitchat/age
+  examples: |
+    - how old are you
+    - what age do you have
+- intent: random_rec
+  examples: |
+    - can you recommend me some movies?
+- intent: time
+  examples: |
+    - What's the time?
+- intent: weather
+  examples: |
+    - what's the weather today?
+    - what's the weather?
+- intent: health
+  examples: |
+    - how are things going?
+- intent: goodbye
+  examples: |
+    - bye
+    - good by
+- intent: affirm
+  examples: |
+    - of course
+    - Confirmed
+- intent: inform_name
+  examples: |
+    - [yes man](movie_title)
+    - [Tom Hank](PERSON)
+- intent: deny
+  examples: |
+    - That's not what I want
+    - don't like that
+- intent: inform_genre
+  examples: |
+    - [action](genre)
+    - [thriller](genre)
+    - I'm more into [comedy](genre) movie?
+- intent: weather_city
+  examples: |
+    - hows weather in [Dublin](city)
+    - tell me the temperature at [trento](city)
+- intent: greet
+  examples: |
+    - hello
+    - goodmorning
+    - AIYO
+    - hey there
+- intent: mood_unhappy
+  examples: |
+    - unhappy
+    - I am sad
+    - so saad
+- intent: mood_great
+  examples: |
+    - I am great
+    - I'm fine
+    - very good
+    - amazing
+- intent: recommend_movie_genre
+  examples: |
+    - show me a good [documentary](genre)
+    - can you recommed an [action](genre)
+    - i would like an movie that is [comedy](genre) please
+    - can you recommend an [action](genre) movie
+    - [hindi](language) [romance](genre)
+    - can you recommend a film that is [comedy](genre)
+    - Can you find me a [comdey](genre)?
+- intent: person_movie
+  examples: |
+    - what movies has [christopher nolan](PERSON) directed
+    - give me movies by [Stanley Kubrick](PERSON)
+    - Find me movies by [Greata Gerwig](PERSON)
+    - get me a movie by [Kathryn Bigelow](PERSON)
+    - give me movies by [julia roberts](PERSON)
+    - Find a movie directed by [Quentin Tarantino](PERSON).
+    - what did [philip seymour hoffman](PERSON) act in
+    - Get me a movie by [Oliver Stone](PERSON)
+    - movies with [harvey kitel](PERSON)
+    - Find titles by [Penny Marshall](PERSON).
+- intent: search_movie_data
+  examples: |
+    - Starring in [Spotlight](movie_title)
+    - yes, can you tell me who directed [Rushmore](movie_title)
+    - Which actors were in [Ex Machina](movie_title)
+    - who starred in [alien](movie_title)
+    - Who acted in [What We Do in the Shadows](movie_title)
+    - who acted in [Alien](movie_title)
+    - Who directed [Terminator](movie_title)
+    - acting in [The big short](movie_title)
+    - who directed [rushmore](movie_title)
+    - who starred in [fight club](movie_title)
+    - when was [black panther](movie_title) released
+    - who acted in [Inside Out](movie_title)
+    - who directed [star wars](movie_title)
+    - who acted in [Frozen](movie_title)
+    - How did [Terminator](movie_title) rate
+    - who acted in [Fight Club](movie_title)
+- synonym: movie_title
+  examples: |
+    - film
+    - picture
+    - motion picture
+    - feature film
+    - silver screen
+    - titles

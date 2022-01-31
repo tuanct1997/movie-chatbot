@@ -15,7 +15,7 @@ stories:
   - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
-  - action: utter_did_that_help
+  # - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
 
@@ -25,7 +25,7 @@ stories:
   - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
-  - action: utter_did_that_help
+  # - action: utter_did_that_help
   - intent: deny
   - action: utter_sad
 
@@ -37,7 +37,7 @@ stories:
   - action: utter_health
   - intent: mood_unhappy
   - action: utter_cheer_up
-  - action: utter_did_that_help
+  # - action: utter_did_that_help
   - intent: deny
   - action: utter_sad
 
@@ -66,14 +66,12 @@ stories:
     - PERSON: "Brad Pitt"
   - action: action_verify_person
   - intent: affirm
-  - action: utter_onit
+  # - action: utter_onit
   - action: action_search_movie_by_actor
   - intent: mood_great
   - action: utter_happy
-  - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-  - action: utter_goodbye
 
 - story: ask actor movie happy path
   steps:
@@ -90,11 +88,10 @@ stories:
     - PERSON: "tom cruise"
   - action: action_verify_person
   - intent: affirm
-  - action: utter_onit
+  # - action: utter_onit
   - action: action_search_movie_by_actor
   - intent: mood_great
   - action: utter_happy
-  - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
   - action: utter_goodbye
@@ -116,11 +113,10 @@ stories:
   - intent: deny
   - action: utter_repeat
   - intent: inform_name
-  - action: utter_onit
+  # - action: utter_onit
   - action: action_search_movie_by_actor
   - intent: mood_great
   - action: utter_happy
-  - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
   - action: utter_goodbye
@@ -133,7 +129,7 @@ stories:
   - action: utter_health
   - intent: mood_unhappy
   - action: utter_cheer_up
-  - action: utter_did_that_help
+  # - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
   - intent: person_movie
@@ -145,9 +141,9 @@ stories:
   - intent: deny
   - action: utter_repeat
   - intent: inform_name
-  - action: utter_onit
+  # - action: utter_onit
   - action: action_search_movie_by_actor
-  - action: utter_did_that_help
+  # - action: utter_did_that_help
   - intent: deny
   - action: utter_sorry
 
@@ -164,9 +160,9 @@ stories:
   - intent: deny
   - action: utter_repeat
   - intent: inform_name
-  - action: utter_onit
+  # - action: utter_onit
   - action: action_search_movie_by_actor
-  - action: utter_did_that_help
+  # - action: utter_did_that_help
   - intent: deny
   - action: utter_sorry
 
@@ -182,11 +178,11 @@ stories:
     - movie_title: "Black Panther"
   - action: action_verify_title
   - intent: affirm
-  - action: utter_onit
+  # - action: utter_onit
   - action: action_search_movie_info
   - intent: mood_great
   - action: utter_happy
-  - action: utter_did_that_help
+  # - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
   - action: utter_goodbye
@@ -202,12 +198,13 @@ stories:
     - movie_title: "Black Panther"
   - action: action_verify_title
   - intent: deny
-  - intent: utter_repeat
-  - action: utter_onit
+  - action: utter_repeat
+  - intent: inform_name
+  # - action: utter_onit
   - action: action_search_movie_info
   - intent: mood_great
   - action: utter_happy
-  - action: utter_did_that_help
+  # - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
   - action: utter_goodbye
@@ -224,8 +221,9 @@ stories:
     - movie_title: "Black Panther"
   - action: action_verify_title
   - intent: deny
-  - intent: utter_repeat
-  - action: utter_onit
+  - action: utter_repeat
+  - intent: inform_name
+  # - action: utter_onit
   - action: action_search_movie_info
   - intent: deny
   - action: utter_sad
@@ -245,7 +243,7 @@ stories:
     - genre: "sci-fi"
   - action: action_verify_genre
   - intent: affirm
-  - action: utter_onit
+  # - action: utter_onit
   - action: action_recommendation
   - intent: mood_great
   - action: utter_happy
@@ -263,8 +261,9 @@ stories:
     - genre: "thriller"
   - action: action_verify_genre
   - intent: deny
-  - action: utter_repeat
-  - action: utter_onit
+  - action: utter_genre_type
+  - intent: inform_genre
+  # - action: utter_onit
   - action: action_recommendation
   - intent: mood_great
   - action: utter_happy
@@ -282,8 +281,9 @@ stories:
     - genre: "comedy"
   - action: action_verify_genre
   - intent: deny
-  - action: utter_repeat
-  - action: utter_onit
+  - action: utter_genre_type
+  - intent: inform_genre
+  # - action: utter_onit
   - action: action_recommendation
   - intent: mood_unhappy
   - action: utter_sad
@@ -301,7 +301,7 @@ stories:
     - genre: "drama"
   - action: action_verify_genre
   - intent: affirm
-  - action: utter_onit
+  # - action: utter_onit
   - action: action_recommendation
   - intent: mood_unhappy
   - action: utter_sad
@@ -317,8 +317,9 @@ stories:
     - genre: "comedy"
   - action: action_verify_genre
   - intent: deny
-  - action: utter_repeat
-  - action: utter_onit
+  - action: utter_genre_type
+  - intent: inform_genre
+  # - action: utter_onit
   - action: action_recommendation
   - intent: mood_unhappy
   - action: utter_sad
@@ -334,7 +335,7 @@ stories:
     - genre: "drama"
   - action: action_verify_genre
   - intent: affirm
-  - action: utter_onit
+  # - action: utter_onit
   - action: action_recommendation
   - intent: mood_unhappy
   - action: utter_sad
@@ -350,8 +351,9 @@ stories:
     - genre: "thriller"
   - action: action_verify_genre
   - intent: deny
-  - action: utter_repeat
-  - action: utter_onit
+  - action: utter_genre_type
+  - intent: inform_genre
+  # - action: utter_onit
   - action: action_recommendation
   - intent: mood_great
   - action: utter_happy
@@ -367,7 +369,7 @@ stories:
     - genre: "sci-fi"
   - action: action_verify_genre
   - intent: affirm
-  - action: utter_onit
+  # - action: utter_onit
   - action: action_recommendation
   - intent: mood_great
   - action: utter_happy
@@ -379,8 +381,8 @@ stories:
   - action: utter_greet
   - intent: weather
   - action: action_tell_weather_default
-  - action: utter_city
-  - action: utter_did_that_help
+  # - action: utter_city
+  # - action: utter_did_that_help
   - intent: affirm
 
 - story: weather 2
@@ -389,8 +391,8 @@ stories:
   - action: utter_greet
   - intent: weather
   - action: action_tell_weather_default
-  - action: utter_city
-  - action: utter_did_that_help
+  # - action: utter_city
+  # - action: utter_did_that_help
   - intent: affirm
 
 - story: weather 3
@@ -399,8 +401,8 @@ stories:
   - action: utter_greet
   - intent: weather
   - action: action_tell_weather_default
-  - action: utter_city
-  - action: utter_did_that_help
+  # - action: utter_city
+  # - action: utter_did_that_help
   - intent: deny
   - action: utter_sorry
 
@@ -414,8 +416,8 @@ stories:
   - slot_was_set:
     - city: "hanoi"
   - action: action_tell_weather_default
-  - action: utter_city
-  - action: utter_did_that_help
+  # - action: utter_city
+  # - action: utter_did_that_help
   - intent: affirm
 
 
@@ -429,7 +431,7 @@ stories:
   - slot_was_set:
     - city: "paris"
   - action: action_tell_weather_default
-  - action: utter_city
-  - action: utter_did_that_help
+  # - action: utter_city
+  # - action: utter_did_that_help
   - intent: deny
   - action: utter_sorry
