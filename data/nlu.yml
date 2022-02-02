@@ -214,20 +214,6 @@ nlu:
     - [action](genre)
     - [sci-fi](genre)
 
-# - intent: dismiss
-#   examples: |
-#     - that is all
-#     - i don't need anything else
-#     - you answered all of my questions
-#     - i can't think of anything else
-#     - nope, that's it
-#     - not at this time
-#     - that will be it
-#     - i have no more questions
-#     - that's all for now
-#     - nevermind
-#     - no, that is all
-#     - that is all i need
 
 - intent: health
   examples: |
@@ -241,18 +227,6 @@ nlu:
     - how's everything?
 
     
-
-# - intent: inform_lang
-#   examples: |
-#     - A [spanish](language) one please!
-#     - [english](language) please!
-#     - [italian](language) please!
-#     - [italian](language)
-#     - [french](language)
-#     - [hindi](language)
-#     - What's about [spanish](language) for today?
-#     - [french](language) would be nice!
-#     - Can I have [english](language) movie please!
 
 
 - intent: recommend_movie_genre
@@ -456,7 +430,6 @@ nlu:
     - show me the weather in [london](city)
     - What's the weather in [berlin](city) at the moment?
 
-
 - synonym: movie_title
   examples: |
     - film
@@ -465,14 +438,4 @@ nlu:
     - feature film
     - silver screen
     - titles
-# - intent: reset
-#   examples: |
-#     - actually i've changed my mind
-#     - can you reset
-#     - can you erase that please
-#     - i don't want that anymore
-#     - nevermind actually can I ask for a different one
-#     - can we run this again
-#     - run it back
-#     - can i ask for a different movie rec
-#     - Another thought I don't want that anymore
+

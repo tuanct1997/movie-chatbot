@@ -50,10 +50,6 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-# - story: Say hello anytime the user says hello
-#   steps:
-#   - intent: greet
-#   - action: utter_greet
 
 - story: ask actor movie happy path
   steps:
