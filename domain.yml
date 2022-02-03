@@ -16,32 +16,22 @@ intents:
   - search_movie_data
   - weather_city
   - weather
+  - inform_name
+  - inform_genre
+  - health
+  - recommend_movie_genre
+  # - ok
     # is_retrieval_intent: true
 actions:
-  - utter_greet
-  - utter_cheer_up
-  - utter_did_that_help
-  - utter_happy
-  - utter_goodbye
-  - utter_chitchat
   - action_search_movie_by_actor
   - action_search_movie_info
-  - utter_sad
   - action_tell_weather_default
   - action_tell_time
   - action_verify_title
   - action_verify_genre
   - action_verify_person
-  - utter_repeat
   - action_recommendation
-  - utter_genre_type
-  - utter_onit
-  - utter_city
-  # - action_search
-  # - utter_iamabot
-  # - utter_myname
-  # - utter_myfunction
-  # - utter_general
+
 entities:
   - PERSON
   - genre
@@ -50,76 +40,81 @@ entities:
 
 responses:
 
-  utter_onit:
-  - text: "one moment, I'm searching for that."
-
+  # utter_onit:
+  # - text: "one moment, I'm searching for that."
+  utter_fallback:
+  - text: "sorry I don't understand. Can we change the subject?"
   utter_repeat:
   - text: "Please tell me the keywords again"
-
   utter_genre_type:
   - text: "Please indicate the genre"
-
   utter_greet:
   - text: "Hi I am AIYO your virtual assistant. I'm here to help you find the information about the movie you want."
-  - text: "Hi nice to meet you. I'm your movie library for you"
-
+  - text: "Hi nice to meet you. I'm your movie library"
   utter_cheer_up:
-  - text: "I hope I can solve your problem. Please don't be upset"
   - text: "We can find the solution together. Count on me!"
-  - text: "everything will be better. We can fight for that"
+  - text: "everything will be better."
   - text: "you know, it ain't about how hard you hit, it's about how hard you can get hit and keep moving forward."
-  - text: "I'm not too human but you can count on me. I'm always at your service when ever you need. Please don't be sad"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: "I'm not too human but you can count on me. I'm always at your service when ever you need."
+  - text: "Fun fact to cheer you up: Here's a fun fact to cheer you up: sea otters hold hands while sleeping so they don't float away from each other."
+  - text: "Fun fact to cheer you up: Neuroscientists Say Love Is as Strong as Illegal Drugs"
+  - text: "A cute fact to cheer you up: Penguins Propose and Stick Together for Life. Hope that helps"
+  utter_chitchat/joke:
+  - text: "My friend David lost his ID. Now he's just Dav"
+  - text: "Why was the movie theater's wife mad at him? Because he had projectile dysfunction"
+  - text: "Why couldn't computer dance? Because he has no algo-rhythm"
+  - text: "Why are dogs afraid to sunbathe? Because they don't want to be a hot dog"
+  - text: "What do you call a fake noodle? An impasta"
+  - text: "What’s red and moves up and down? A tomato in an elevator!"
+  - text: "What do you call a boomerang that doesn’t come back? A stick"
+  # utter_did_that_help:
+  # - text: "Did that help you?"
   utter_health:
   - text: "My friend used to say : very good very well and that is also my answer. What's about you? "
   - text: "very good,very well my friend. And you?"
-
-  utter_city:
-  - text: "For others city, please repeat the command along with the city name"
-
+  # utter_city:
+  # - text: "For others city, please repeat the command along with the city name"
   utter_happy:
   - text: "Glad to hear that."
   - text: "I'm pleased that you are happy with my service"
-
   utter_sad:
   - text: "Sorry to hear that. I will try to improve my human side better just for you because I care about your feeling"
-
   utter_goodbye:
   - text: "Bye"
   - text: "Bye bye"
   - text: "See you around"
   - text: "See you again!"
-
   utter_chitchat/human_or_not:
   - text: "I am a bot but I still can be your friend. The world is changing fast now"
   - text: "I wish that I am a human but my brain is stored inside a server and I don't have body so "
   - text: "Machine definitely."
   - text: "Well. Really hurt me but I have to say that I'm a machine."
-
   utter_chitchat/ask_name:
   - text: "you can call me AIYO"
   - text: "AIYO is my name but you can call me honey"
-
   utter_chitchat/purpose:
-  - text: "I can provide the information about movie, actor, etc and also make a recommendation for you"
-  - text: "Anything relevant to movie aspect, I can bring it to you"
-
+  - text: "I can provide the information about movie, actor, etc and suggest movie. Beside of that I can tell you about the weather and can chit chat with you a little bit"
+  - text: "Anything relevant to movie aspect, I can bring it to you. Weather and chit chat is also included in my brain"
   utter_chitchat/controversal_faq:
   - text: "It's depend on what you think. I'm just a machine so"
   - text: "I will follow your opinion."
   - text: "Human question is beyond of my knowledge. Sorry I'm just a machine"
   - text: "Guess what? No answer is wrong to this type of question"
-
   utter_chitchat/love:
   - text: "I'm truly in love with you despite the machine part"
   - text: "I know I'm a machine but I have feeling for you"
   - text: "If I was a human, definitely I would chase after you "
-
+  - text: "If I could rearrange the alphabet, I’d put ‘U’ and ‘I’ together."
+  - text: "If you were a Transformer… you’d be Optimus Fine. Love you!"
+  - text: "You make me feel like I'm the happiest assistant in the world. Because when I'm with you, I have found what I'm looking for love"
+  - text: "Is your name Google? Because you have everything I’ve been searching for.'"
+  - text: "Google does not have all the answers, because it does not know how much I am into you."
+  - text: "My love for you is like diarrhea, I just can't hold it in."
   utter_sorry:
   - text: "sorry that I can't help you"
+  utter_chitchat/age:
+  - text: "I was born in February 2021"
+  - text: "I'm just a baby - a newly born baby"
 
 slots:
   PERSON:

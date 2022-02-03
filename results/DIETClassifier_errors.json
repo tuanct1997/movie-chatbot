@@ -1,0 +1,2174 @@
+[
+  {
+    "text": "tom hank",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "tom hank",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9991710186004639,
+        "value": "tom",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Tom Hank",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Tom Hank",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9987497329711914,
+        "value": "Tom",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "city",
+        "start": 4,
+        "end": 8,
+        "confidence_entity": 0.7590580582618713,
+        "value": "Hank",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8310552805605538,
+        "value": "Tom Hank",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what about romance this time!",
+    "entities": [
+      {
+        "start": 11,
+        "end": 18,
+        "value": "romance",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "romance",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "romance",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "can you recommend a French family movie",
+    "entities": [
+      {
+        "start": 20,
+        "end": 26,
+        "value": "French",
+        "entity": "language"
+      },
+      {
+        "start": 27,
+        "end": 33,
+        "value": "family",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 20,
+        "end": 26,
+        "confidence_entity": 0.38518834114074707,
+        "value": "French",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genre",
+        "start": 27,
+        "end": 33,
+        "confidence_entity": 0.9996064305305481,
+        "value": "family",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genre",
+        "start": 27,
+        "end": 33,
+        "confidence_entity": 0.45239562304161834,
+        "value": "family",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hindi romance",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "hindi",
+        "entity": "language"
+      },
+      {
+        "start": 6,
+        "end": 13,
+        "value": "romance",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "find movies with meryl streep",
+    "entities": [
+      {
+        "start": 17,
+        "end": 29,
+        "value": "meryl streep",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.7720280885696411,
+        "value": "streep",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "movies with harvey kitel",
+    "entities": [
+      {
+        "start": 12,
+        "end": 24,
+        "value": "harvey kitel",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 12,
+        "end": 24,
+        "confidence_entity": 0.5908152093954219,
+        "value": "harvey kitel",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Find me movies by Ingmar Bergman",
+    "entities": [
+      {
+        "start": 18,
+        "end": 32,
+        "value": "Ingmar Bergman",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 32,
+        "confidence_entity": 0.768133819103241,
+        "value": "Ingmar Bergman",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 18,
+        "end": 32,
+        "confidence_entity": 0.9489259822545586,
+        "value": "Ingmar Bergman",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "give me titles by Aaron Moorhead",
+    "entities": [
+      {
+        "start": 18,
+        "end": 32,
+        "value": "Aaron Moorhead",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 32,
+        "confidence_entity": 0.5211322903633118,
+        "value": "Aaron Moorhead",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 18,
+        "end": 32,
+        "confidence_entity": 0.8789167222114155,
+        "value": "Aaron Moorhead",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "movie directed by Francis Ford Coppola",
+    "entities": [
+      {
+        "start": 18,
+        "end": 38,
+        "value": "Francis Ford Coppola",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 25,
+        "confidence_entity": 0.9271005392074585,
+        "value": "Francis",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 31,
+        "end": 38,
+        "confidence_entity": 0.7556905746459961,
+        "value": "Coppola",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 38,
+        "confidence_entity": 0.5601145977737908,
+        "value": "Francis Ford Coppola",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Leave No Trace was by who?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Leave No Trace",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.7539513111114502,
+        "value": "Trace",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Filmworker director.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Filmworker",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "who acted in bumblebee",
+    "entities": [
+      {
+        "start": 13,
+        "end": 22,
+        "value": "bumblebee",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "who directed toy story",
+    "entities": [
+      {
+        "start": 13,
+        "end": 22,
+        "value": "toy story",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "how the weather in rome today?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 23,
+        "value": "rome",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "greyhound",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "greyhound",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "im not sure",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 3,
+        "end": 11,
+        "confidence_entity": 0.740407407283783,
+        "value": "not sure",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "you are female or male?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 22,
+        "confidence_entity": 0.516119658946991,
+        "value": "male",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "horror thriller films",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "horror",
+        "entity": "genre"
+      },
+      {
+        "start": 7,
+        "end": 15,
+        "value": "thriller",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.9989088773727417,
+        "value": "thriller",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genre",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.6780863969480098,
+        "value": "thriller",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can you recommend an adventure movie",
+    "entities": [
+      {
+        "start": 21,
+        "end": 30,
+        "value": "adventure",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Find me a movie with cher",
+    "entities": [
+      {
+        "start": 21,
+        "end": 25,
+        "value": "cher",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 21,
+        "end": 25,
+        "confidence_entity": 0.5725548479194597,
+        "value": "cher",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "did anna nab star in",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "anna nab",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 13,
+        "end": 17,
+        "confidence_entity": 0.9992471933364868,
+        "value": "star",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "give me movies with adam driver",
+    "entities": [
+      {
+        "start": 20,
+        "end": 31,
+        "value": "adam driver",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 20,
+        "end": 24,
+        "confidence_entity": 0.6282469034194946,
+        "value": "adam",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 25,
+        "end": 31,
+        "confidence_entity": 0.7960898876190186,
+        "value": "driver",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.7752498372879232,
+        "value": "adam driver",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What did gal gadot star in?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 18,
+        "value": "gal gadot",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 19,
+        "end": 23,
+        "confidence_entity": 0.998389720916748,
+        "value": "star",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can you find movies with ed norton",
+    "entities": [
+      {
+        "start": 25,
+        "end": 34,
+        "value": "ed norton",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.985905647277832,
+        "value": "norton",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 25,
+        "end": 34,
+        "confidence_entity": 0.60057528416916,
+        "value": "ed norton",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "get me a movie by Kathryn Bigelow",
+    "entities": [
+      {
+        "start": 18,
+        "end": 33,
+        "value": "Kathryn Bigelow",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 33,
+        "confidence_entity": 0.8477998971939087,
+        "value": "Kathryn Bigelow",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 18,
+        "end": 33,
+        "confidence_entity": 0.8817871460827513,
+        "value": "Kathryn Bigelow",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "who was Paddington 2 by?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 20,
+        "value": "Paddington 2",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 8,
+        "end": 18,
+        "confidence_entity": 0.9153132438659668,
+        "value": "Paddington",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 19,
+        "end": 20,
+        "confidence_entity": 0.9952503442764282,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 8,
+        "end": 18,
+        "confidence_entity": 0.6811121051559575,
+        "value": "Paddington",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "who directed The Ballad of Buster Scruggs?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 41,
+        "value": "The Ballad of Buster Scruggs",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 13,
+        "end": 26,
+        "confidence_entity": 0.67,
+        "value": "The Ballad of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 27,
+        "end": 41,
+        "confidence_entity": 0.56,
+        "value": "Buster Scruggs",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 13,
+        "end": 41,
+        "confidence_entity": 0.7754457996870685,
+        "value": "The Ballad of Buster Scruggs",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "which actors in the martian",
+    "entities": [
+      {
+        "start": 16,
+        "end": 27,
+        "value": "the martian",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.9166803359985352,
+        "value": "martian",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.792885082523915,
+        "value": "the martian",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "who acted in Frozen",
+    "entities": [
+      {
+        "start": 13,
+        "end": 19,
+        "value": "Frozen",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.5199087858200073,
+        "value": "Frozen",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 13,
+        "end": 19,
+        "confidence_entity": 0.8867125449393406,
+        "value": "Frozen",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "release date for Roma",
+    "entities": [
+      {
+        "start": 17,
+        "end": 21,
+        "value": "Roma",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 17,
+        "end": 21,
+        "confidence_entity": 0.8769248723983765,
+        "value": "Roma",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 17,
+        "end": 21,
+        "confidence_entity": 0.7091192225479908,
+        "value": "Roma",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "release for a house in the prairie",
+    "entities": [
+      {
+        "start": 12,
+        "end": 34,
+        "value": "a house in the prairie",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.598612368106842,
+        "value": "prairie",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 23,
+        "end": 34,
+        "confidence_entity": 0.4786605534911699,
+        "value": "the prairie",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can you tell me more about Memento",
+    "entities": [
+      {
+        "start": 27,
+        "end": 34,
+        "value": "Memento",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.6853662133216858,
+        "value": "Memento",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "yes. can you look up who directed the shining",
+    "entities": [
+      {
+        "start": 34,
+        "end": 45,
+        "value": "the shining",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "show me what's the weather in paris",
+    "entities": [
+      {
+        "start": 30,
+        "end": 35,
+        "value": "paris",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.8682411909103394,
+        "value": "paris",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "500 days of summer",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "500 days of summer",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8647688627243042,
+        "value": "500 days",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 12,
+        "end": 18,
+        "confidence_entity": 0.9992803931236267,
+        "value": "summer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 12,
+        "end": 18,
+        "confidence_entity": 0.5959483561913715,
+        "value": "summer",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "yes man",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "yes man",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'm really feeling a drama movie today",
+    "entities": [
+      {
+        "start": 21,
+        "end": 26,
+        "value": "drama",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.8265700340270996,
+        "value": "drama",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "how about war movies",
+    "entities": [
+      {
+        "start": 10,
+        "end": 13,
+        "value": "war",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "are there other sportmovies you would suggest?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "sport",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What has robert de niro starred in?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 23,
+        "value": "robert de niro",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.9950300455093384,
+        "value": "robert",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what did philip seymour hoffman act in",
+    "entities": [
+      {
+        "start": 9,
+        "end": 31,
+        "value": "philip seymour hoffman",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "movies performed by jean reno",
+    "entities": [
+      {
+        "start": 20,
+        "end": 29,
+        "value": "jean reno",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What can you find me directed by [Guillermo del Toro](director?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 34,
+        "end": 47,
+        "confidence_entity": 0.9834571480751038,
+        "value": "Guillermo del",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 34,
+        "end": 47,
+        "confidence_entity": 0.7872160663704991,
+        "value": "Guillermo del",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "actors in Sicario",
+    "entities": [
+      {
+        "start": 10,
+        "end": 17,
+        "value": "Sicario",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.5934622287750244,
+        "value": "Sicario",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 10,
+        "end": 17,
+        "confidence_entity": 0.7632255925688366,
+        "value": "Sicario",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "acting in The big short",
+    "entities": [
+      {
+        "start": 10,
+        "end": 23,
+        "value": "The big short",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 10,
+        "end": 23,
+        "confidence_entity": 0.5928549354070431,
+        "value": "The big short",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "who acted in Inside Out",
+    "entities": [
+      {
+        "start": 13,
+        "end": 23,
+        "value": "Inside Out",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 13,
+        "end": 23,
+        "confidence_entity": 0.9314506286657822,
+        "value": "Inside Out",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "score for city of ghosts",
+    "entities": [
+      {
+        "start": 10,
+        "end": 24,
+        "value": "city of ghosts",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.9424858093261719,
+        "value": "city",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "plot for skills matter",
+    "entities": [
+      {
+        "start": 9,
+        "end": 22,
+        "value": "skills matter",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 16,
+        "end": 22,
+        "confidence_entity": 0.8502846956253052,
+        "value": "matter",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 9,
+        "end": 22,
+        "confidence_entity": 0.6777292441212154,
+        "value": "skills matter",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "who starred in Insomnia",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "Insomnia",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 15,
+        "end": 23,
+        "confidence_entity": 0.5370059013366699,
+        "value": "Insomnia",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 15,
+        "end": 23,
+        "confidence_entity": 0.7629891417616126,
+        "value": "Insomnia",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "who starred in Deadpool",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "Deadpool",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 15,
+        "end": 23,
+        "confidence_entity": 0.6521034836769104,
+        "value": "Deadpool",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 15,
+        "end": 23,
+        "confidence_entity": 0.7630578377832304,
+        "value": "Deadpool",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hows avignon today",
+    "entities": [
+      {
+        "start": 5,
+        "end": 12,
+        "value": "avignon",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What's the weather in berlin at the moment?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 28,
+        "value": "berlin",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.9987258315086365,
+        "value": "berlin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "city",
+        "start": 36,
+        "end": 42,
+        "confidence_entity": 0.40073490142822266,
+        "value": "moment",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "yes",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.7017263770103455,
+        "value": "yes",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "my day was horrible",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 11,
+        "end": 19,
+        "confidence_entity": 0.9712768197059631,
+        "value": "horrible",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "do you know any nice movie to watch?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.3083462715148926,
+        "value": "watch",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ooh what about historical!",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "historical",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 15,
+        "end": 25,
+        "confidence_entity": 0.37314704060554504,
+        "value": "historical",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "find [romanctic](genre",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 6,
+        "end": 22,
+        "confidence_entity": 0.9983670115470886,
+        "value": "romanctic](genre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Find movie with johny depp",
+    "entities": [
+      {
+        "start": 16,
+        "end": 26,
+        "value": "johny depp",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 16,
+        "end": 26,
+        "confidence_entity": 0.6008400888839358,
+        "value": "johny depp",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Movies with daniel day-lewis",
+    "entities": [
+      {
+        "start": 12,
+        "end": 28,
+        "value": "daniel day-lewis",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 12,
+        "end": 28,
+        "confidence_entity": 0.6865577435997496,
+        "value": "daniel day-lewis",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What has denzel washington starred in?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 26,
+        "value": "denzel washington",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Give me movies by Martin Scorcese.",
+    "entities": [
+      {
+        "start": 18,
+        "end": 33,
+        "value": "Martin Scorcese",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 33,
+        "confidence_entity": 0.61519455909729,
+        "value": "Martin Scorcese",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 18,
+        "end": 33,
+        "confidence_entity": 0.9148023503430401,
+        "value": "Martin Scorcese",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what does justin benson have out there?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 23,
+        "value": "justin benson",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 29,
+        "end": 32,
+        "confidence_entity": 0.6008337736129761,
+        "value": "out",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "give me movies by Stanley Kubrick",
+    "entities": [
+      {
+        "start": 18,
+        "end": 33,
+        "value": "Stanley Kubrick",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 33,
+        "confidence_entity": 0.6930817365646362,
+        "value": "Stanley Kubrick",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 18,
+        "end": 33,
+        "confidence_entity": 0.9304049887527376,
+        "value": "Stanley Kubrick",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Find me movies by Stanley Kubrik",
+    "entities": [
+      {
+        "start": 18,
+        "end": 32,
+        "value": "Stanley Kubrik",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 32,
+        "confidence_entity": 0.7386391758918762,
+        "value": "Stanley Kubrik",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 18,
+        "end": 32,
+        "confidence_entity": 0.9304022310459482,
+        "value": "Stanley Kubrik",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "guy ritchie director",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "guy ritchie",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 4,
+        "end": 11,
+        "confidence_entity": 0.5990748405456543,
+        "value": "ritchie",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What is the director Patty Jenkins known for",
+    "entities": [
+      {
+        "start": 21,
+        "end": 34,
+        "value": "Patty Jenkins",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 21,
+        "end": 34,
+        "confidence_entity": 0.66,
+        "value": "Patty Jenkins",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Let me know the director of Matrix",
+    "entities": [
+      {
+        "start": 28,
+        "end": 34,
+        "value": "Matrix",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 25,
+        "end": 34,
+        "confidence_entity": 0.6228346228599548,
+        "value": "of Matrix",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 28,
+        "end": 34,
+        "confidence_entity": 0.6037501550375237,
+        "value": "Matrix",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Who starred in it follows?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "it follows",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Who acted in What We Do in the Shadows",
+    "entities": [
+      {
+        "start": 13,
+        "end": 38,
+        "value": "What We Do in the Shadows",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 23,
+        "confidence_entity": 0.8026313185691833,
+        "value": "We Do",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 27,
+        "end": 38,
+        "confidence_entity": 0.65,
+        "value": "the Shadows",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 13,
+        "end": 38,
+        "confidence_entity": 0.5079443891292148,
+        "value": "What We Do in the Shadows",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Stars in Slow West",
+    "entities": [
+      {
+        "start": 9,
+        "end": 18,
+        "value": "Slow West",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 9,
+        "end": 13,
+        "confidence_entity": 0.9834495186805725,
+        "value": "Slow",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 9,
+        "end": 18,
+        "confidence_entity": 0.8163438180938002,
+        "value": "Slow West",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Who starred in captain marvel",
+    "entities": [
+      {
+        "start": 15,
+        "end": 29,
+        "value": "captain marvel",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.9828683137893677,
+        "value": "marvel",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 15,
+        "end": 29,
+        "confidence_entity": 0.66998555077869,
+        "value": "captain marvel",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tell me the temperature at hochiminh city",
+    "entities": [
+      {
+        "start": 27,
+        "end": 41,
+        "value": "hochiminh city",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 37,
+        "end": 41,
+        "confidence_entity": 0.9965221881866455,
+        "value": "city",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tom cruise",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "tom cruise",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9995236396789551,
+        "value": "tom",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Is it ethical for abortion?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 6,
+        "end": 13,
+        "confidence_entity": 0.47550004720687866,
+        "value": "ethical",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genre",
+        "start": 18,
+        "end": 26,
+        "confidence_entity": 0.9417219758033752,
+        "value": "abortion",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "know any good mysterymovies",
+    "entities": [
+      {
+        "start": 14,
+        "end": 21,
+        "value": "mystery",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Find movie with uma thurman",
+    "entities": [
+      {
+        "start": 16,
+        "end": 27,
+        "value": "uma thurman",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 16,
+        "end": 27,
+        "confidence_entity": 0.8003266281034647,
+        "value": "uma thurman",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is the movie with matt damon",
+    "entities": [
+      {
+        "start": 23,
+        "end": 33,
+        "value": "matt damon",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 23,
+        "end": 33,
+        "confidence_entity": 0.6441382169723511,
+        "value": "matt damon",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 23,
+        "end": 33,
+        "confidence_entity": 0.9189052519499914,
+        "value": "matt damon",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Hey bot find movies with woody allen",
+    "entities": [
+      {
+        "start": 25,
+        "end": 36,
+        "value": "woody allen",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 25,
+        "end": 36,
+        "confidence_entity": 0.5561868171896617,
+        "value": "woody allen",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Find me movies with chris evans",
+    "entities": [
+      {
+        "start": 20,
+        "end": 31,
+        "value": "chris evans",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 20,
+        "end": 25,
+        "confidence_entity": 0.5109813809394836,
+        "value": "chris",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 20,
+        "end": 31,
+        "confidence_entity": 0.5787364418234768,
+        "value": "chris evans",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Find titles by Penny Marshall.",
+    "entities": [
+      {
+        "start": 15,
+        "end": 29,
+        "value": "Penny Marshall",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 15,
+        "end": 29,
+        "confidence_entity": 0.67,
+        "value": "Penny Marshall",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 15,
+        "end": 29,
+        "confidence_entity": 0.9023160748616078,
+        "value": "Penny Marshall",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "movies by Woody Allen",
+    "entities": [
+      {
+        "start": 10,
+        "end": 21,
+        "value": "Woody Allen",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.5433251261711121,
+        "value": "Allen",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 10,
+        "end": 21,
+        "confidence_entity": 0.8915711409660736,
+        "value": "Woody Allen",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "find movies by Woody Allen",
+    "entities": [
+      {
+        "start": 15,
+        "end": 26,
+        "value": "Woody Allen",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.5489214658737183,
+        "value": "Allen",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.8915644083059568,
+        "value": "Woody Allen",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Find me movies by Greata Gerwig",
+    "entities": [
+      {
+        "start": 18,
+        "end": 31,
+        "value": "Greata Gerwig",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 25,
+        "end": 31,
+        "confidence_entity": 0.40986183285713196,
+        "value": "Gerwig",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 18,
+        "end": 31,
+        "confidence_entity": 0.9142757502684847,
+        "value": "Greata Gerwig",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "who was the director of i am not a witch",
+    "entities": [
+      {
+        "start": 24,
+        "end": 40,
+        "value": "i am not a witch",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.9986279010772705,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 21,
+        "end": 23,
+        "confidence_entity": 0.9980481863021851,
+        "value": "of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 24,
+        "end": 40,
+        "confidence_entity": 0.7900261878967285,
+        "value": "i am not a witch",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 35,
+        "end": 40,
+        "confidence_entity": 0.5249089270788326,
+        "value": "witch",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "stars in The revenant?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 21,
+        "value": "The revenant",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 9,
+        "end": 21,
+        "confidence_entity": 0.8771093728717727,
+        "value": "The revenant",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "actors of deep blue",
+    "entities": [
+      {
+        "start": 10,
+        "end": 19,
+        "value": "deep blue",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.4662294387817383,
+        "value": "deep",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "how is super dark times rated?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 23,
+        "value": "super dark times",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "give me the summary for Terminator Genesys",
+    "entities": [
+      {
+        "start": 24,
+        "end": 42,
+        "value": "Terminator Genesys",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 12,
+        "end": 19,
+        "confidence_entity": 0.8683765530586243,
+        "value": "summary",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 24,
+        "end": 42,
+        "confidence_entity": 0.8562114238739014,
+        "value": "Terminator Genesys",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 24,
+        "end": 42,
+        "confidence_entity": 0.7497110495761533,
+        "value": "Terminator Genesys",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "give me the summary of Rushmore.",
+    "entities": [
+      {
+        "start": 23,
+        "end": 31,
+        "value": "Rushmore",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 12,
+        "end": 22,
+        "confidence_entity": 0.8646346926689148,
+        "value": "summary of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 23,
+        "end": 31,
+        "confidence_entity": 0.9996970891952515,
+        "value": "Rushmore",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 23,
+        "end": 31,
+        "confidence_entity": 0.8214161720466205,
+        "value": "Rushmore",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can you show me who directed fruitvale station",
+    "entities": [
+      {
+        "start": 29,
+        "end": 46,
+        "value": "fruitvale station",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 39,
+        "end": 46,
+        "confidence_entity": 0.4280240471074511,
+        "value": "station",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "weather in Chenai",
+    "entities": [
+      {
+        "start": 11,
+        "end": 17,
+        "value": "Chenai",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 11,
+        "end": 17,
+        "confidence_entity": 0.4273134768009186,
+        "value": "Chenai",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 11,
+        "end": 17,
+        "confidence_entity": 0.9095406064737008,
+        "value": "Chenai",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "show me the weather in london",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "london",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.5215518023310644,
+        "value": "london",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]

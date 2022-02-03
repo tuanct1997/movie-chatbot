@@ -1,0 +1,1413 @@
+[
+  {
+    "text": "tom hank",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "tom hank",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9991710186004639,
+        "value": "tom",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what about romance this time!",
+    "entities": [
+      {
+        "start": 11,
+        "end": 18,
+        "value": "romance",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "romance",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "romance",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "can you recommend a French family movie",
+    "entities": [
+      {
+        "start": 20,
+        "end": 26,
+        "value": "French",
+        "entity": "language"
+      },
+      {
+        "start": 27,
+        "end": 33,
+        "value": "family",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 20,
+        "end": 26,
+        "confidence_entity": 0.38518834114074707,
+        "value": "French",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genre",
+        "start": 27,
+        "end": 33,
+        "confidence_entity": 0.9996064305305481,
+        "value": "family",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genre",
+        "start": 27,
+        "end": 33,
+        "confidence_entity": 0.45239562304161834,
+        "value": "family",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "show me a good documentary",
+    "entities": [
+      {
+        "start": 15,
+        "end": 26,
+        "value": "documentary",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 15,
+        "end": 26,
+        "confidence_entity": 0.9996442794799805,
+        "value": "documentary",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hindi romance",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "hindi",
+        "entity": "language"
+      },
+      {
+        "start": 6,
+        "end": 13,
+        "value": "romance",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "find movies with meryl streep",
+    "entities": [
+      {
+        "start": 17,
+        "end": 29,
+        "value": "meryl streep",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.7720280885696411,
+        "value": "streep",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "movie directed by Francis Ford Coppola",
+    "entities": [
+      {
+        "start": 18,
+        "end": 38,
+        "value": "Francis Ford Coppola",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 25,
+        "confidence_entity": 0.9271005392074585,
+        "value": "Francis",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 31,
+        "end": 38,
+        "confidence_entity": 0.7556905746459961,
+        "value": "Coppola",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 18,
+        "end": 38,
+        "confidence_entity": 0.5601145977737908,
+        "value": "Francis Ford Coppola",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Leave No Trace was by who?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Leave No Trace",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.7539513111114502,
+        "value": "Trace",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Filmworker director.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Filmworker",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Who directed the film Snatch?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 28,
+        "value": "Snatch",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.7595915198326111,
+        "value": "Snatch",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 17,
+        "end": 28,
+        "confidence_entity": 0.5130772063234563,
+        "value": "film Snatch",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "who acted in bumblebee",
+    "entities": [
+      {
+        "start": 13,
+        "end": 22,
+        "value": "bumblebee",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "when was the lure released",
+    "entities": [
+      {
+        "start": 9,
+        "end": 17,
+        "value": "the lure",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 9,
+        "end": 17,
+        "confidence_entity": 0.9941295385360718,
+        "value": "the lure",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "when was black panther released",
+    "entities": [
+      {
+        "start": 9,
+        "end": 22,
+        "value": "black panther",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 9,
+        "end": 22,
+        "confidence_entity": 0.9993796348571777,
+        "value": "black panther",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "who directed toy story",
+    "entities": [
+      {
+        "start": 13,
+        "end": 22,
+        "value": "toy story",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "how the weather in rome today?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 23,
+        "value": "rome",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "greyhound",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "greyhound",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "can I have a music movie please",
+    "entities": [
+      {
+        "start": 13,
+        "end": 18,
+        "value": "music",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.9973344802856445,
+        "value": "music",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "horror thriller films",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "horror",
+        "entity": "genre"
+      },
+      {
+        "start": 7,
+        "end": 15,
+        "value": "thriller",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.9989088773727417,
+        "value": "thriller",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "genre",
+        "start": 7,
+        "end": 15,
+        "confidence_entity": 0.6780863969480098,
+        "value": "thriller",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can you recommend an adventure movie",
+    "entities": [
+      {
+        "start": 21,
+        "end": 30,
+        "value": "adventure",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "thrillerflicks please",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "thriller",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9838168621063232,
+        "value": "thrillerflicks",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "did anna nab star in",
+    "entities": [
+      {
+        "start": 4,
+        "end": 12,
+        "value": "anna nab",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 13,
+        "end": 17,
+        "confidence_entity": 0.9992471933364868,
+        "value": "star",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What did gal gadot star in?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 18,
+        "value": "gal gadot",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 19,
+        "end": 23,
+        "confidence_entity": 0.998389720916748,
+        "value": "star",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Joker was directed by who?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Joker",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9986741542816162,
+        "value": "Joker",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "who was Paddington 2 by?",
+    "entities": [
+      {
+        "start": 8,
+        "end": 20,
+        "value": "Paddington 2",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 8,
+        "end": 18,
+        "confidence_entity": 0.9153132438659668,
+        "value": "Paddington",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 19,
+        "end": 20,
+        "confidence_entity": 0.9952503442764282,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 8,
+        "end": 18,
+        "confidence_entity": 0.6811121051559575,
+        "value": "Paddington",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "release for a house in the prairie",
+    "entities": [
+      {
+        "start": 12,
+        "end": 34,
+        "value": "a house in the prairie",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.598612368106842,
+        "value": "prairie",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 23,
+        "end": 34,
+        "confidence_entity": 0.4786605534911699,
+        "value": "the prairie",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "can you tell me more about Memento",
+    "entities": [
+      {
+        "start": 27,
+        "end": 34,
+        "value": "Memento",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.6853662133216858,
+        "value": "Memento",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "yes. can you look up who directed the shining",
+    "entities": [
+      {
+        "start": 34,
+        "end": 45,
+        "value": "the shining",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "show me what's the weather in paris",
+    "entities": [
+      {
+        "start": 30,
+        "end": 35,
+        "value": "paris",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 30,
+        "end": 35,
+        "confidence_entity": 0.8682411909103394,
+        "value": "paris",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "500 days of summer",
+    "entities": [
+      {
+        "start": 0,
+        "end": 18,
+        "value": "500 days of summer",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.8647688627243042,
+        "value": "500 days",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 12,
+        "end": 18,
+        "confidence_entity": 0.9992803931236267,
+        "value": "summer",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 12,
+        "end": 18,
+        "confidence_entity": 0.5959483561913715,
+        "value": "summer",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "yes man",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "yes man",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i'm really feeling a drama movie today",
+    "entities": [
+      {
+        "start": 21,
+        "end": 26,
+        "value": "drama",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.8265700340270996,
+        "value": "drama",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "how about war movies",
+    "entities": [
+      {
+        "start": 10,
+        "end": 13,
+        "value": "war",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "can you recommend a musical for me",
+    "entities": [
+      {
+        "start": 20,
+        "end": 27,
+        "value": "musical",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.999009370803833,
+        "value": "musical",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "are there other sportmovies you would suggest?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 21,
+        "value": "sport",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What has robert de niro starred in?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 23,
+        "value": "robert de niro",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 9,
+        "end": 15,
+        "confidence_entity": 0.9950300455093384,
+        "value": "robert",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what did philip seymour hoffman act in",
+    "entities": [
+      {
+        "start": 9,
+        "end": 31,
+        "value": "philip seymour hoffman",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "movies performed by jean reno",
+    "entities": [
+      {
+        "start": 20,
+        "end": 29,
+        "value": "jean reno",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What can you find me directed by [Guillermo del Toro](director?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 34,
+        "end": 47,
+        "confidence_entity": 0.9834571480751038,
+        "value": "Guillermo del",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "PERSON",
+        "start": 34,
+        "end": 47,
+        "confidence_entity": 0.7872160663704991,
+        "value": "Guillermo del",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "How did Terminator rate",
+    "entities": [
+      {
+        "start": 8,
+        "end": 18,
+        "value": "Terminator",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 8,
+        "end": 18,
+        "confidence_entity": 0.9779185652732849,
+        "value": "Terminator",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "score for city of ghosts",
+    "entities": [
+      {
+        "start": 10,
+        "end": 24,
+        "value": "city of ghosts",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.9424858093261719,
+        "value": "city",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "who starred in fight club",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "fight club",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 15,
+        "end": 25,
+        "confidence_entity": 0.9983729124069214,
+        "value": "fight club",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "hows avignon today",
+    "entities": [
+      {
+        "start": 5,
+        "end": 12,
+        "value": "avignon",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hows weather in Dublin",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "Dublin",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 16,
+        "end": 22,
+        "confidence_entity": 0.6622835397720337,
+        "value": "Dublin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 16,
+        "end": 22,
+        "confidence_entity": 0.6397232727108749,
+        "value": "Dublin",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What's the weather in berlin at the moment?",
+    "entities": [
+      {
+        "start": 22,
+        "end": 28,
+        "value": "berlin",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 22,
+        "end": 28,
+        "confidence_entity": 0.9987258315086365,
+        "value": "berlin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "city",
+        "start": 36,
+        "end": 42,
+        "confidence_entity": 0.40073490142822266,
+        "value": "moment",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ooh what about historical!",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "historical",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 15,
+        "end": 25,
+        "confidence_entity": 0.37314704060554504,
+        "value": "historical",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "are there any good sci-fifilms?",
+    "entities": [
+      {
+        "start": 19,
+        "end": 25,
+        "value": "sci-fi",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 19,
+        "end": 30,
+        "confidence_entity": 0.9934149980545044,
+        "value": "sci-fifilms",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What has denzel washington starred in?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 26,
+        "value": "denzel washington",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what does justin benson have out there?",
+    "entities": [
+      {
+        "start": 10,
+        "end": 23,
+        "value": "justin benson",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 29,
+        "end": 32,
+        "confidence_entity": 0.6008337736129761,
+        "value": "out",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "guy ritchie director",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "guy ritchie",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 4,
+        "end": 11,
+        "confidence_entity": 0.5990748405456543,
+        "value": "ritchie",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What is the director Patty Jenkins known for",
+    "entities": [
+      {
+        "start": 21,
+        "end": 34,
+        "value": "Patty Jenkins",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 21,
+        "end": 34,
+        "confidence_entity": 0.66,
+        "value": "Patty Jenkins",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Who starred in it follows?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "it follows",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what is the current temperature in Hanoi",
+    "entities": [
+      {
+        "start": 35,
+        "end": 40,
+        "value": "Hanoi",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 35,
+        "end": 40,
+        "confidence_entity": 0.9955905675888062,
+        "value": "Hanoi",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 35,
+        "end": 40,
+        "confidence_entity": 0.5825529382463517,
+        "value": "Hanoi",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tell me the temperature at hochiminh city",
+    "entities": [
+      {
+        "start": 27,
+        "end": 41,
+        "value": "hochiminh city",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 37,
+        "end": 41,
+        "confidence_entity": 0.9965221881866455,
+        "value": "city",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tell me the temperature at trento",
+    "entities": [
+      {
+        "start": 27,
+        "end": 33,
+        "value": "trento",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "city",
+        "start": 27,
+        "end": 33,
+        "confidence_entity": 0.9967284202575684,
+        "value": "trento",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "tom cruise",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "tom cruise",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 0,
+        "end": 3,
+        "confidence_entity": 0.9995236396789551,
+        "value": "tom",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "brad pitt",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "brad pitt",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.999312162399292,
+        "value": "brad pitt",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you find me a comdey?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 24,
+        "value": "comdey",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "genre",
+        "start": 18,
+        "end": 24,
+        "confidence_entity": 0.7053595185279846,
+        "value": "comdey",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "know any good mysterymovies",
+    "entities": [
+      {
+        "start": 14,
+        "end": 21,
+        "value": "mystery",
+        "entity": "genre"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what movies has christopher nolan directed",
+    "entities": [
+      {
+        "start": 16,
+        "end": 33,
+        "value": "christopher nolan",
+        "entity": "PERSON"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 16,
+        "end": 33,
+        "confidence_entity": 0.45453348755836487,
+        "value": "christopher nolan",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "who was the director of i am not a witch",
+    "entities": [
+      {
+        "start": 24,
+        "end": 40,
+        "value": "i am not a witch",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.9986279010772705,
+        "value": "the",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 21,
+        "end": 23,
+        "confidence_entity": 0.9980481863021851,
+        "value": "of",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 24,
+        "end": 40,
+        "confidence_entity": 0.7900261878967285,
+        "value": "i am not a witch",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 35,
+        "end": 40,
+        "confidence_entity": 0.5249089270788326,
+        "value": "witch",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "actors of deep blue",
+    "entities": [
+      {
+        "start": 10,
+        "end": 19,
+        "value": "deep blue",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 10,
+        "end": 14,
+        "confidence_entity": 0.4662294387817383,
+        "value": "deep",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "how is super dark times rated?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 23,
+        "value": "super dark times",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "when was joker released?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 14,
+        "value": "joker",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 9,
+        "end": 14,
+        "confidence_entity": 0.9987860321998596,
+        "value": "joker",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "can you show me who directed fruitvale station",
+    "entities": [
+      {
+        "start": 29,
+        "end": 46,
+        "value": "fruitvale station",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 39,
+        "end": 46,
+        "confidence_entity": 0.4280240471074511,
+        "value": "station",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "who directed rushmore",
+    "entities": [
+      {
+        "start": 13,
+        "end": 21,
+        "value": "rushmore",
+        "entity": "movie_title"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 13,
+        "end": 21,
+        "confidence_entity": 0.9992283582687378,
+        "value": "rushmore",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "weather in Chenai",
+    "entities": [
+      {
+        "start": 11,
+        "end": 17,
+        "value": "Chenai",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "PERSON",
+        "start": 11,
+        "end": 17,
+        "confidence_entity": 0.4273134768009186,
+        "value": "Chenai",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "movie_title",
+        "start": 11,
+        "end": 17,
+        "confidence_entity": 0.9095406064737008,
+        "value": "Chenai",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "show me the weather in london",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "london",
+        "entity": "city"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "movie_title",
+        "start": 23,
+        "end": 29,
+        "confidence_entity": 0.5215518023310644,
+        "value": "london",
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]

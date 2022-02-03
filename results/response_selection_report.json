@@ -1,0 +1,74 @@
+{
+  "chitchat/human_or_not": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {}
+  },
+  "chitchat/ask_name": {
+    "precision": 0.25,
+    "recall": 0.25,
+    "f1-score": 0.25,
+    "support": 4,
+    "confused_with": {
+      "chitchat/purpose": 2,
+      "chitchat/human_or_not": 1
+    }
+  },
+  "chitchat/joke": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "chitchat/age": {
+    "precision": 1.0,
+    "recall": 0.875,
+    "f1-score": 0.9333333333333333,
+    "support": 8,
+    "confused_with": {
+      "chitchat/purpose": 1
+    }
+  },
+  "chitchat/purpose": {
+    "precision": 0.5,
+    "recall": 0.75,
+    "f1-score": 0.6,
+    "support": 4,
+    "confused_with": {
+      "chitchat/ask_name": 1
+    }
+  },
+  "chitchat/controversal_faq": {
+    "precision": 1.0,
+    "recall": 0.2857142857142857,
+    "f1-score": 0.4444444444444445,
+    "support": 7,
+    "confused_with": {
+      "chitchat/human_or_not": 3,
+      "chitchat/ask_name": 2
+    }
+  },
+  "chitchat/love": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "accuracy": 0.7297297297297297,
+  "macro avg": {
+    "precision": 0.75,
+    "recall": 0.7372448979591837,
+    "f1-score": 0.6992063492063492,
+    "support": 37
+  },
+  "weighted avg": {
+    "precision": 0.8108108108108109,
+    "recall": 0.7297297297297297,
+    "f1-score": 0.72012012012012,
+    "support": 37
+  }
+}

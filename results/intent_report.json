@@ -1,0 +1,184 @@
+{
+  "weather": {
+    "precision": 0.8333333333333334,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.7692307692307692,
+    "support": 7,
+    "confused_with": {
+      "weather_city": 2
+    }
+  },
+  "health": {
+    "precision": 0.25,
+    "recall": 0.25,
+    "f1-score": 0.25,
+    "support": 8,
+    "confused_with": {
+      "mood_great": 3,
+      "chitchat": 2
+    }
+  },
+  "inform_genre": {
+    "precision": 0.35294117647058826,
+    "recall": 0.46153846153846156,
+    "f1-score": 0.4000000000000001,
+    "support": 13,
+    "confused_with": {
+      "recommend_movie_genre": 4,
+      "mood_great": 1
+    }
+  },
+  "deny": {
+    "precision": 0.625,
+    "recall": 0.45454545454545453,
+    "f1-score": 0.5263157894736842,
+    "support": 11,
+    "confused_with": {
+      "mood_unhappy": 5,
+      "health": 1
+    }
+  },
+  "mood_unhappy": {
+    "precision": 0.5714285714285714,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6153846153846153,
+    "support": 18,
+    "confused_with": {
+      "search_movie_data": 2,
+      "mood_great": 1
+    }
+  },
+  "goodbye": {
+    "precision": 0.75,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.7058823529411765,
+    "support": 9,
+    "confused_with": {
+      "mood_great": 1,
+      "random_rec": 1
+    }
+  },
+  "mood_great": {
+    "precision": 0.5,
+    "recall": 0.55,
+    "f1-score": 0.5238095238095238,
+    "support": 20,
+    "confused_with": {
+      "chitchat": 3,
+      "mood_unhappy": 2
+    }
+  },
+  "weather_city": {
+    "precision": 0.7857142857142857,
+    "recall": 0.8461538461538461,
+    "f1-score": 0.8148148148148148,
+    "support": 13,
+    "confused_with": {
+      "search_movie_data": 1,
+      "weather": 1
+    }
+  },
+  "random_rec": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "recommend_movie_genre": 5,
+      "chitchat": 1
+    }
+  },
+  "recommend_movie_genre": {
+    "precision": 0.7222222222222222,
+    "recall": 0.8125,
+    "f1-score": 0.7647058823529411,
+    "support": 32,
+    "confused_with": {
+      "inform_genre": 4,
+      "weather_city": 1
+    }
+  },
+  "inform_name": {
+    "precision": 0.625,
+    "recall": 0.5,
+    "f1-score": 0.5555555555555556,
+    "support": 10,
+    "confused_with": {
+      "search_movie_data": 2,
+      "mood_great": 1
+    }
+  },
+  "affirm": {
+    "precision": 0.4,
+    "recall": 0.2222222222222222,
+    "f1-score": 0.2857142857142857,
+    "support": 9,
+    "confused_with": {
+      "goodbye": 2,
+      "inform_name": 1
+    }
+  },
+  "chitchat": {
+    "precision": 0.7692307692307693,
+    "recall": 0.8108108108108109,
+    "f1-score": 0.7894736842105263,
+    "support": 37,
+    "confused_with": {
+      "inform_genre": 2,
+      "search_movie_data": 2
+    }
+  },
+  "person_movie": {
+    "precision": 0.9387755102040817,
+    "recall": 0.8679245283018868,
+    "f1-score": 0.9019607843137256,
+    "support": 53,
+    "confused_with": {
+      "search_movie_data": 6,
+      "chitchat": 1
+    }
+  },
+  "time": {
+    "precision": 0.625,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.6666666666666666,
+    "support": 7,
+    "confused_with": {
+      "chitchat": 1,
+      "health": 1
+    }
+  },
+  "greet": {
+    "precision": 0.9166666666666666,
+    "recall": 0.6875,
+    "f1-score": 0.7857142857142857,
+    "support": 16,
+    "confused_with": {
+      "mood_great": 3,
+      "deny": 1
+    }
+  },
+  "search_movie_data": {
+    "precision": 0.8409090909090909,
+    "recall": 0.9135802469135802,
+    "f1-score": 0.8757396449704142,
+    "support": 81,
+    "confused_with": {
+      "inform_genre": 3,
+      "inform_name": 2
+    }
+  },
+  "accuracy": 0.7342857142857143,
+  "macro avg": {
+    "precision": 0.6180130368340948,
+    "recall": 0.5963929607288838,
+    "f1-score": 0.6018216855972344,
+    "support": 350
+  },
+  "weighted avg": {
+    "precision": 0.7282274950606284,
+    "recall": 0.7342857142857143,
+    "f1-score": 0.7275936089097045,
+    "support": 350
+  }
+}
